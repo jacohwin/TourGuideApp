@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">TourGuideApp</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="api_key">AIzaSyBTpq2aXpU-MsCALXcmCWpNE6-hNZ11mZI</string>
+</resources>
