@@ -65,6 +65,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     private GoogleMap mMap;
     private Button mSettings;
+    private Button btnFind;
     Location mLastLocation;
     LocationRequest mLocationRequest;
     private FusedLocationProviderClient mFusedLocationClient;
@@ -144,6 +145,20 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                         return;
                     }
                 });
+
+                btnFind = findViewById(R.id.btn_find);
+                btnFind.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(MapsActivity.this, TouristPlaces.class);
+                        startActivity(intent);
+                        return;
+                    }
+                });
+
+
+
+
 
             }
 
